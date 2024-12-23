@@ -87,12 +87,12 @@ A modern React application that showcases advanced UI/UX implementation and clea
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/github-profile-explorer.git
+git clone https://github.com/Ayyanaruto/CodeAnt-AI-Assignment.git
 ```
 
 2. Navigate to project directory
 ```bash
-cd github-profile-explorer
+cd CodeAnt-AI-Assignment
 ```
 
 3. Install dependencies
@@ -140,13 +140,6 @@ src/
 - `bun run lint` - Run ESLint
 - `bun run preview` - Preview production build
 
-## 📝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## 👥 Authors
 
