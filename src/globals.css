@@ -1,0 +1,32 @@
+/* styles.css */
+:root {
+    --primary-color: #1570EF;
+    --primary-hover: #1355B3;
+    --secondary-color: #3B82F6;
+    --accent-color: #60A5FA;
+    --text-color: #2d3436;
+    --bg-color: #F5F9FF;
+    --border-color: #D1E0FF;
+    --card-bg: rgba(255, 255, 255, 0.95);
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --gradient-start: #1570EF;
+    --gradient-end: #60A5FA;
+    --sidebar-width: 250px;
+    --header-height: 64px;
+    --transition-duration: 0.3s;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    background: #fefefe;
+}

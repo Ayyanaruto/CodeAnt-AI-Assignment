@@ -1,0 +1,48 @@
+.welcome-banner {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    padding: 28px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    box-shadow: var(--shadow-md);
+    color: white;
+    margin-bottom: 32px;
+    transition: transform 0.3s ease;
+}
+
+.welcome-banner h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.welcome-banner p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.welcome-banner:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 768px) {
+    .welcome-banner {
+        padding: 24px;
+        margin: 16px;
+    }
+
+    .welcome-banner h2 {
+        font-size: 1.25rem;
+    }
+
+    .welcome-banner p {
+        font-size: 0.9rem;
+    }
+
+    .welcome-banner {
+        padding: 24px;
+        margin: 16px;
+    }
+}

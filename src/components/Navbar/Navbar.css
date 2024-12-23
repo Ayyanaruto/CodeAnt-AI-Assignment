@@ -1,0 +1,140 @@
+.hamburger {
+    position: absolute;
+    right: 20px;
+    translate: transform 0.3s ease;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:first-child {
+    animation: hamburgerTopLine 0.3s forwards;
+}
+
+.hamburger.active span:nth-child(2) {
+    animation: hamburgerMiddleLine 0.3s forwards;
+}
+
+.hamburger.active span:last-child {
+    animation: hamburgerBottomLine 0.3s forwards;
+}
+
+.navbar {
+    height: var(--header-height);
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    animation: slideIn 0.3s ease-out;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    animation: logoSpin 1s linear infinite;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hamburgerTopLine {
+    0% { transform: rotate(0); }
+    50% { transform: translateY(9px); }
+    100% { transform: translateY(9px) rotate(45deg); }
+}
+
+@keyframes hamburgerMiddleLine {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes hamburgerBottomLine {
+    0% { transform: rotate(0); }
+    50% { transform: translateY(-9px); }
+    100% { transform: translateY(-9px) rotate(-45deg); }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes logoSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar .logo span {
+        font-size: calc(1.2rem - 0.2rem);
+    }
+}
